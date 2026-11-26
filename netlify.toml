@@ -1,0 +1,34 @@
+[build]
+  command = "npm run build"
+  publish = "_site"
+
+# pauseai.au (added as a domain alias in Netlify) goes to the main domain
+[[redirects]]
+  from = "https://pauseai.au/*"
+  to = "https://pauseai.org.au/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.pauseai.au/*"
+  to = "https://pauseai.org.au/:splat"
+  status = 301
+  force = true
+
+# The old page names, in case anyone links to them on this domain
+[[redirects]]
+  from = "/australia"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/australia-detail"
+  to = "/detail/"
+  status = 301
+[[redirects]]
+  from = "/australia-progress"
+  to = "/progress/"
+  status = 301
+[[redirects]]
+  from = "/australia-story"
+  to = "/story/"
+  status = 301
