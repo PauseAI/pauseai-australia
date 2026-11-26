@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ title }}{% if page.url != "/" %} · PauseAI Australia{% endif %}</title>
+  <meta name="description" content="{{ description }}">
+  <link rel="canonical" href="https://pauseai.org.au{{ page.url }}">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">PauseAI Australia</a>
+    <nav>
+      <a href="/detail/">Why Australia</a>
+      <a href="/progress/">Our progress</a>
+      <a href="https://pauseai.info/join">Join</a>
+    </nav>
+  </header>
+  <main>
+    <h1>{{ title }}</h1>
+    {{ content | safe }}
+  </main>
+  <footer class="site-footer">
+    <p>PauseAI Australia is part of the global <a href="https://pauseai.info">PauseAI</a> movement.
+    Contact: <a href="mailto:australia@pauseai.info">australia@pauseai.info</a></p>
+  </footer>
+</body>
+</html>
