@@ -11,7 +11,6 @@ Each page is a Markdown file in `src/`:
 | Home | `src/index.md` |
 | Why Australia | `src/detail.md` |
 | Our progress | `src/progress.md` |
-| Share your story | `src/story.md` |
 
 Images go in `src/australia/` and are linked as `/australia/<file name>`.
 

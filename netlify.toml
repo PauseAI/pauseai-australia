@@ -30,5 +30,11 @@
   status = 301
 [[redirects]]
   from = "/australia-story"
-  to = "/story/"
+  to = "/"
+  status = 301
+
+# The story page was removed (its Tally form is closed)
+[[redirects]]
+  from = "/story/*"
+  to = "/"
   status = 301
